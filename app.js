@@ -16,11 +16,6 @@ app.route("/").get((req, res) => {
 
 app.use("/", employeeRouter)
 
-
-  // req.params are always strings, so we need to convert `id` into a number
-  // before we can use it to find the employee
-  
-
 //ERROR HANDLING MIDDLEWARE (LAST CODE USED)
 app.use(( err, req, res, next ) => {
   console.log(err)
